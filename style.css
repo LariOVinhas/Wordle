@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.linha {
+    display: contents;
+}
+
+.letra {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.letra.errada {
+    background-color: #787c7e;
+    color: white;
+}
+
+.letra.quase {
+    background-color: #c9b458;
+    color: white;
+}
+
+.letra.correta {
+    background-color: #6aaa64;
+    color: white;
+}
+
+.teclado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tecla { 
+    margin: 2px;
+    background-color: #d6d3d3;
+    border: 1px solid #e2e0e0;
+    border-radius: 5px;
+    width: 37px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.tecla.errada {
+    background-color: #787c7e;
+    color: white;
+}
+
+.tecla.correta {
+    background-color: #6aaa64;
+    color: white;
+}
+
+.tecla.quase {
+    background-color: #c9b458;
+    color: white;
+
+}
+
+.tecla.special {
+    width: 72px;
+
+}
+
+.tecla:active {
+    background-color: #e0e0e0;
+}
+
